@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="con-t">
+        <div>
+            <img src="ec9b36d9b19617d00d4040840566bb8a.jpg" alt="">    
+        </div>
+        <div>
+            <p>BEM-VINDA IAAS</p>
+            <p>Esse é o meu controle financeiro</p>
+        </div>
+    </header>
+    <main>
+        <div class="resumo">
+            <div>
+                Entradas: R$
+                <spna class="entradas">0.00</spna>
+            </div>
+            <div>
+                Saídas: R$
+                <span class="saidas">0.00</span>
+            </div>
+            <div>
+               Total: R$
+                <span class="total">0.00</span>
+            </div>
+        </div>
+        <div class="novoItem">
+            <div class="divDesc">
+                <label for="desc">Descrição</label>
+                <input type="text" id="desc">
+            </div>
+            <div class="divValor">
+                <label for="valor">Valor</label>
+                <input type="number" id="valor">
+            </div>
+            <div class="divTipo">
+                <label for="tipo">Tipo</label>
+                <select id="tipo">
+                    <option>Entrada</option>
+                    <option>Saída</option>
+                </select>
+            </div>
+            <button id="btnNovo">Incluir</button>
+        </div>
+        <div class="divTabela">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th class="columnValor"></th>
+                        <th class="columnTipo"></th>
+                        <th class="columnAcao"></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </main>
+    </div>
+    <script src="main.js"></script>
+
+   
+</body>
+</html>
