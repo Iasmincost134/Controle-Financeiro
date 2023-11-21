@@ -1,7 +1,74 @@
+@font-face {
+    font-family:  'Roboto', sans-serif ;
+    src: url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Open+Sans:wght@300&family=Roboto:ital,wght@0,400;0,700;0,900;1,700&display=swap');
+}
+  
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+}
+
 img{
     height: 100vh;
-    width: 50%;
+    width: 110vh;
 }
-.cont-t{
+.con-t{
     display: flex;
+    position: fixed;
+}
+
+main{
+   margin:60px 150px;
+}
+
+.apresentacao, main{
+    text-align: center;
+    font-family:  'Roboto', sans-serif ;
+   
+}
+.titulo, label{
+    font-weight: bold;
+}
+.titulo{
+    font-size: x-large;
+}
+p{
+    margin: 20px;
+}
+   
+
+input, #tipo{
+    border: 2px solid transparent;
+    width: 15em;
+    height: 2.5em;
+    padding-left: 0.8em;
+    outline: none;
+    margin: 15px;
+    overflow: hidden;
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+input:hover, #tipo:hover
+input:focus, #tipo:focus {
+  border: 2px solid #4A9DEC;
+  box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+  background-color: white;
+}
+
+#btnNovo{
+    border: 1px black solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    color: white;
+    transition: all 0.5s;
+    background-color: rgb(27, 27, 27);
+}
+#btnNovo:hover{
+    background-color: rgb(77, 76, 76);
+}
+.divDesc{
+    margin-right: 30px;
 }
